@@ -1,0 +1,56 @@
+.main {
+  height: 100px;
+  text-align: center;
+  background-color: fff;
+  position: absolute;
+}
+
+#header {
+  position: relative;
+  top: -1000px;
+  height: 300px;
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-delay: 300ms;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+button {
+  display: inline-block;
+  background-color: beige;
+  width: 150px;
+  height: 80px;
+  border: 2px solid #aabbdd;
+  animation-name: buttoncolor;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes buttoncolor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
