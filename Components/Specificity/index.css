@@ -1,0 +1,397 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+span {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.iphone,
+.screen {
+  border: 0.5vh solid #525c6b;
+  height: 600px;
+}
+
+.iphone {
+  padding: 10vh 1.5vh;
+  border-radius: 6vh;
+  position: relative;
+}
+
+.screen {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(11.5vh, #5f8bd3), color-stop(11.5vh, #3f74ca));
+  background: linear-gradient(to top, #5f8bd3 11.5vh, #3f74ca 11.5vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.5vh;
+  width: 36vh;
+}
+
+.icon {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 1.5vh;
+  background-color: #f7f8fa;
+  margin: 1.5vh;
+}
+
+.icon:active {
+  opacity: 0.75;
+}
+
+.icon:nth-last-of-type(-n + 4) {
+  margin-top: 3vh;
+}
+
+@-webkit-keyframes wiggle {
+  25% {
+    -webkit-transform: rotate(3.5deg);
+            transform: rotate(3.5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-3.5deg);
+            transform: rotate(-3.5deg);
+  }
+}
+
+@keyframes wiggle {
+  25% {
+    -webkit-transform: rotate(3.5deg);
+            transform: rotate(3.5deg);
+  }
+  75% {
+    -webkit-transform: rotate(-3.5deg);
+            transform: rotate(-3.5deg);
+  }
+}
+
+.wiggle .icon:nth-of-type(1) {
+  -webkit-animation: wiggle 0.29053s linear infinite 0.02975s;
+          animation: wiggle 0.29053s linear infinite 0.02975s;
+  -webkit-transform-origin: 66.71131% 33.66112%;
+          transform-origin: 66.71131% 33.66112%;
+}
+
+.wiggle .icon:nth-of-type(2) {
+  -webkit-animation: wiggle 0.29332s linear infinite 0.09968s;
+          animation: wiggle 0.29332s linear infinite 0.09968s;
+  -webkit-transform-origin: 54.2654% 41.36136%;
+          transform-origin: 54.2654% 41.36136%;
+}
+
+.wiggle .icon:nth-of-type(3) {
+  -webkit-animation: wiggle 0.29199s linear infinite 0.01539s;
+          animation: wiggle 0.29199s linear infinite 0.01539s;
+  -webkit-transform-origin: 74.51262% 61.36803%;
+          transform-origin: 74.51262% 61.36803%;
+}
+
+.wiggle .icon:nth-of-type(4) {
+  -webkit-animation: wiggle 0.29829s linear infinite 0.09377s;
+          animation: wiggle 0.29829s linear infinite 0.09377s;
+  -webkit-transform-origin: 64.09894% 41.94117%;
+          transform-origin: 64.09894% 41.94117%;
+}
+
+.wiggle .icon:nth-of-type(5) {
+  -webkit-animation: wiggle 0.22742s linear infinite 0.20603s;
+          animation: wiggle 0.22742s linear infinite 0.20603s;
+  -webkit-transform-origin: 56.36338% 63.1916%;
+          transform-origin: 56.36338% 63.1916%;
+}
+
+.wiggle .icon:nth-of-type(6) {
+  -webkit-animation: wiggle 0.26759s linear infinite 0.20031s;
+          animation: wiggle 0.26759s linear infinite 0.20031s;
+  -webkit-transform-origin: 40.70323% 54.21835%;
+          transform-origin: 40.70323% 54.21835%;
+}
+
+.wiggle .icon:nth-of-type(7) {
+  -webkit-animation: wiggle 0.27203s linear infinite 0.14059s;
+          animation: wiggle 0.27203s linear infinite 0.14059s;
+  -webkit-transform-origin: 27.30031% 25.15799%;
+          transform-origin: 27.30031% 25.15799%;
+}
+
+.wiggle .icon:nth-of-type(8) {
+  -webkit-animation: wiggle 0.28017s linear infinite 0.15044s;
+          animation: wiggle 0.28017s linear infinite 0.15044s;
+  -webkit-transform-origin: 29.65127% 66.40047%;
+          transform-origin: 29.65127% 66.40047%;
+}
+
+.wiggle .icon:nth-of-type(9) {
+  -webkit-animation: wiggle 0.2549s linear infinite 0.23055s;
+          animation: wiggle 0.2549s linear infinite 0.23055s;
+  -webkit-transform-origin: 61.52839% 71.6244%;
+          transform-origin: 61.52839% 71.6244%;
+}
+
+.wiggle .icon:nth-of-type(10) {
+  -webkit-animation: wiggle 0.28396s linear infinite 0.03357s;
+          animation: wiggle 0.28396s linear infinite 0.03357s;
+  -webkit-transform-origin: 59.18213% 60.04929%;
+          transform-origin: 59.18213% 60.04929%;
+}
+
+.wiggle .icon:nth-of-type(11) {
+  -webkit-animation: wiggle 0.24134s linear infinite 0.17376s;
+          animation: wiggle 0.24134s linear infinite 0.17376s;
+  -webkit-transform-origin: 31.73153% 32.52672%;
+          transform-origin: 31.73153% 32.52672%;
+}
+
+.wiggle .icon:nth-of-type(12) {
+  -webkit-animation: wiggle 0.23748s linear infinite 0.02194s;
+          animation: wiggle 0.23748s linear infinite 0.02194s;
+  -webkit-transform-origin: 69.21971% 54.05607%;
+          transform-origin: 69.21971% 54.05607%;
+}
+
+.wiggle .icon:nth-of-type(13) {
+  -webkit-animation: wiggle 0.20978s linear infinite 0.15551s;
+          animation: wiggle 0.20978s linear infinite 0.15551s;
+  -webkit-transform-origin: 65.12662% 68.24471%;
+          transform-origin: 65.12662% 68.24471%;
+}
+
+.wiggle .icon:nth-of-type(14) {
+  -webkit-animation: wiggle 0.27004s linear infinite 0.11092s;
+          animation: wiggle 0.27004s linear infinite 0.11092s;
+  -webkit-transform-origin: 39.68295% 53.79128%;
+          transform-origin: 39.68295% 53.79128%;
+}
+
+.wiggle .icon:nth-of-type(15) {
+  -webkit-animation: wiggle 0.27815s linear infinite 0.09487s;
+          animation: wiggle 0.27815s linear infinite 0.09487s;
+  -webkit-transform-origin: 46.07002% 72.66538%;
+          transform-origin: 46.07002% 72.66538%;
+}
+
+.wiggle .icon:nth-of-type(16) {
+  -webkit-animation: wiggle 0.20836s linear infinite 0.14113s;
+          animation: wiggle 0.20836s linear infinite 0.14113s;
+  -webkit-transform-origin: 54.45726% 66.11738%;
+          transform-origin: 54.45726% 66.11738%;
+}
+
+.wiggle .icon:nth-of-type(17) {
+  -webkit-animation: wiggle 0.22281s linear infinite 0.12222s;
+          animation: wiggle 0.22281s linear infinite 0.12222s;
+  -webkit-transform-origin: 63.64524% 37.91326%;
+          transform-origin: 63.64524% 37.91326%;
+}
+
+.wiggle .icon:nth-of-type(18) {
+  -webkit-animation: wiggle 0.29522s linear infinite 0.1401s;
+          animation: wiggle 0.29522s linear infinite 0.1401s;
+  -webkit-transform-origin: 29.99529% 63.34496%;
+          transform-origin: 29.99529% 63.34496%;
+}
+
+.wiggle .icon:nth-of-type(19) {
+  -webkit-animation: wiggle 0.20137s linear infinite 0.03931s;
+          animation: wiggle 0.20137s linear infinite 0.03931s;
+  -webkit-transform-origin: 46.92926% 43.18576%;
+          transform-origin: 46.92926% 43.18576%;
+}
+
+.wiggle .icon:nth-of-type(20) {
+  -webkit-animation: wiggle 0.25731s linear infinite 0.13364s;
+          animation: wiggle 0.25731s linear infinite 0.13364s;
+  -webkit-transform-origin: 49.16155% 66.8661%;
+          transform-origin: 49.16155% 66.8661%;
+}
+
+.wiggle .icon:nth-of-type(21) {
+  -webkit-animation: wiggle 0.25041s linear infinite 0.04344s;
+          animation: wiggle 0.25041s linear infinite 0.04344s;
+  -webkit-transform-origin: 55.055% 35.28657%;
+          transform-origin: 55.055% 35.28657%;
+}
+
+.wiggle .icon:nth-of-type(22) {
+  -webkit-animation: wiggle 0.21204s linear infinite 0.23758s;
+          animation: wiggle 0.21204s linear infinite 0.23758s;
+  -webkit-transform-origin: 47.18136% 37.86741%;
+          transform-origin: 47.18136% 37.86741%;
+}
+
+.wiggle .icon:nth-of-type(23) {
+  -webkit-animation: wiggle 0.26577s linear infinite 0.03037s;
+          animation: wiggle 0.26577s linear infinite 0.03037s;
+  -webkit-transform-origin: 71.55617% 44.37821%;
+          transform-origin: 71.55617% 44.37821%;
+}
+
+.wiggle .icon:nth-of-type(24) {
+  -webkit-animation: wiggle 0.22364s linear infinite 0.23669s;
+          animation: wiggle 0.22364s linear infinite 0.23669s;
+  -webkit-transform-origin: 38.62394% 70.91135%;
+          transform-origin: 38.62394% 70.91135%;
+}
+
+.wiggle .icon:nth-of-type(25) {
+  -webkit-animation: wiggle 0.27037s linear infinite 0.1959s;
+          animation: wiggle 0.27037s linear infinite 0.1959s;
+  -webkit-transform-origin: 63.93638% 46.70017%;
+          transform-origin: 63.93638% 46.70017%;
+}
+
+.wiggle .icon:nth-of-type(26) {
+  -webkit-animation: wiggle 0.2605s linear infinite 0.136s;
+          animation: wiggle 0.2605s linear infinite 0.136s;
+  -webkit-transform-origin: 52.35738% 67.76769%;
+          transform-origin: 52.35738% 67.76769%;
+}
+
+.wiggle .icon:nth-of-type(27) {
+  -webkit-animation: wiggle 0.21959s linear infinite 0.21091s;
+          animation: wiggle 0.21959s linear infinite 0.21091s;
+  -webkit-transform-origin: 69.25021% 62.31245%;
+          transform-origin: 69.25021% 62.31245%;
+}
+
+.wiggle .icon:nth-of-type(28) {
+  -webkit-animation: wiggle 0.20775s linear infinite 0.22138s;
+          animation: wiggle 0.20775s linear infinite 0.22138s;
+  -webkit-transform-origin: 52.88678% 50.11297%;
+          transform-origin: 52.88678% 50.11297%;
+}
+
+.home,
+.camera,
+.proximity,
+.speaker,
+.silence,
+.volume-up,
+.volume-down,
+.sleep {
+  position: absolute;
+}
+
+.home,
+.camera,
+.proximity {
+  border-radius: 50%;
+}
+
+.speaker,
+.silence,
+.volume-up,
+.volume-down,
+.sleep,
+.proximity {
+  background-color: #525c6b;
+}
+
+.home,
+.speaker,
+.camera,
+.proximity {
+  left: 50%;
+}
+
+.home,
+.speaker {
+  margin-left: -3vh;
+  width: 6vh;
+}
+
+.home,
+.camera {
+  border: 0.5vh solid #525c6b;
+}
+
+.home {
+  height: 6vh;
+  bottom: 2vh;
+}
+
+.speaker {
+  top: 4.75vh;
+  height: 0.5vh;
+  border-radius: 0.5vh;
+}
+
+.camera {
+  width: 1.5vh;
+  height: 1.5vh;
+  top: 4.25vh;
+  margin-left: -6.5vh;
+}
+
+.proximity {
+  width: 1vh;
+  height: 1vh;
+  top: 2vh;
+  margin-left: -0.5vh;
+}
+
+.silence,
+.volume-up,
+.volume-down,
+.sleep {
+  width: 0.5vh;
+}
+
+.volume-up,
+.volume-down,
+.sleep {
+  height: 5vh;
+}
+
+.silence,
+.volume-up,
+.volume-down {
+  left: -0.75vh;
+}
+
+.silence {
+  height: 3vh;
+  top: 10vh;
+}
+
+.volume-up,
+.sleep {
+  top: 17vh;
+}
+
+.volume-down {
+  top: 24vh;
+}
+
+.sleep {
+  right: -0.75vh;
+}
+/*# sourceMappingURL=index.css.map */
