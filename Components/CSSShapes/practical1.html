@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Shapes</title>
+    <style>
+      #section1 {
+        height: 500px;
+        background-color: aquamarine;
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+      #section1::before,
+      #section1::after {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background-color: aquamarine;
+        content: "";
+        bottom: -1em;
+        z-index: 1;
+      }
+
+      #section1::before {
+        right: 50%;
+        transform: skew(0, 20deg);
+      }
+
+      #section1::after {
+        left: 50%;
+        transform: skew(0, -20deg);
+      }
+
+      #section2 {
+        height: 100px;
+        background-color: chartreuse;
+        /* display: grid;
+        place-items: center; */
+        position: relative;
+      }
+      #section3 {
+        height: 300px;
+        background-color: coral;
+        /* display: grid;
+        place-items: center; */
+        position: relative;
+        clip-path: circle(78% at 50% 140%);
+        /* -webkit-clip-path: ellipse(50% 35%);
+        -webkit-clip-path: ellipse(50% 65% at 70% 50%);
+        clip-path: ellipse(50% 65% at 70% 50%); */
+      }
+      #section4 {
+        background-color: rgb(25, 25, 25);
+        color: wheat;
+        text-align: center;
+        padding: 2em;
+        vertical-align: middle;
+      }
+      #section4 img {
+        opacity: 1;
+        transition: opacity 1s ease 0.2s;
+        -webkit-transition: opacity 1s ease 3s;
+        content-visibility: auto;
+        transform: skewX(20deg);
+        border: 2px solid red;
+        height: 200px;
+        vertical-align: center;
+      }
+      #section4 p {
+        display: inline-block;
+        vertical-align: middle;
+        border: 2px solid green;
+      }
+      #section4 span {
+        vertical-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="section1">Chevron type style in the bottom of the div</section>
+    <section id="section2">how are you doing</section>
+    <section id="section3"><p>how are you doing</p></section>
+    <section id="section4">
+      <p>
+        <img
+          src="https://super.homelane.com/products/07dec18/entertainment_unit/11.jpg"
+        />
+        <span>hello block 3</span>
+      </p>
+    </section>
+  </body>
+</html>
