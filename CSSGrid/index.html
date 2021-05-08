@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .wrapper {
+        display: grid;
+         grid-template-rows: 100px 1fr auto;
+       /* grid-template-columns: auto auto auto auto; */
+        column-gap: 1em;
+        border: 1px solid gray;
+        word-break: keep-all;
+        min-height: 100vh;
+      }
+      header {
+            grid-column: 1 / 13;
+            grid-row: 1;
+            border: 1px solid red
+        }
+
+        article {
+            grid-column: 6 / 13;
+            grid-row: 2;
+            border: 1px solid gray
+        }
+
+        aside {
+            grid-column: 1 / 6;
+            grid-row: 2;
+            border: 1px solid green
+        }
+
+        footer {
+            grid-column: 1 / 13;
+            grid-row: 3;
+            border: 1px solid black
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header>
+            Header
+        </header>
+        <aside>
+            Aside
+        </aside>
+        <article>article One Three For learning Algorithm and Data Structure, You can
+            refer to Logicmojo Online Course. Learning and understanding concepts
+            required to solve a huge set of the problem list. I think this site is
+            good at teaching the techniques of solving problems. Like, How to
+            approach, which algorithms are used in which problem, and explain
+            complete DSA topics with code. Below is some problem list</article>
+        <footer>Footer</footer>
+      <!-- <div class="one">
+        Header One Three For learning Algorithm and Data Structure, You can
+        refer to Logicmojo Online Course. Learning and understanding concepts
+        required to solve a huge set of the problem list. I think this site is
+        good at teaching the techniques of solving problems. Like, How to
+        approach, which algorithms are used in which problem, and explain
+        complete DSA topics with code. Below is some problem list
+      </div>
+      <div class="two">Two Nav</div>
+      <div class="three">
+        Three For learning Algorithm and Data Structure, You can refer to
+        Logicmojo Online Course. Learning and understanding concepts required to
+        solve a huge set of the problem list. I think this site is good at
+        teaching the techniques of solving problems. Like, How to approach,
+        which algorithms are used in which problem, and explain complete DSA
+        topics with code. Below is some problem list
+      </div>
+      <div class="four">Four Footer</div>
+    </div> -->
+  </body>
+</html>
